@@ -4,7 +4,7 @@ const { Model } = require('sools-modeling/types')
 
 module.exports = {
   name: 'mongo',
-  dependencies: ['sools-modeling'],
+  dependencies: ['modeling'],
   async construct({ modeling }, config) {
     const client = await mongo.MongoClient.connect(config.mongo.url)
 
