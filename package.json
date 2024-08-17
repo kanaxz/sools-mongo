@@ -1,6 +1,6 @@
 {
  "name": "sools-mongo",
- "version": "1.1.0",
+ "version": "1.2.0",
  "description": "",
  "main": "index.js",
  "scripts": {
@@ -10,8 +10,6 @@
  "license": "ISC",
  "dependencies": {
   "mongodb": "^6.1.0",
-  "nanoid": "^3.3.6",
-  "sools-core": "^1.0.0",
-  "sools-modeling": "^1.0.0"
+  "nanoid": "^3.3.6"
  }
 }
