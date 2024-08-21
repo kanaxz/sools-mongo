@@ -1,4 +1,4 @@
-const Branch = require.main.require('sools-modeling/types/Branch')
+const Branch = require.main.require('sools-modeling-tree/types/Branch')
 const { unwind } = require('./utils')
 
 module.exports = {

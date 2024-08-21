@@ -4,7 +4,9 @@ const { Model } = require('sools-modeling/types')
 
 module.exports = {
   name: 'mongo',
-  dependencies: ['modeling'],
+  dependencies: [
+    requier('sools-modeling-server'),
+  ],
   async construct({ modeling }, config) {
     const client = await mongo.MongoClient.connect(config.mongo.url)
 
@@ -13,7 +15,6 @@ module.exports = {
     modeling.map.push([
       Model, (type, controllers) => new MongoCollection(type, db, controllers),
     ])
-
 
     return {
       client,

@@ -1,4 +1,4 @@
-const Primitive = require('sools-modeling/types/Primitive')
+const Primitive = require('sools-modeling/types/primitives/Primitive')
 
 module.exports = {
   for: Primitive,
